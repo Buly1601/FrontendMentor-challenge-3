@@ -1,0 +1,144 @@
+.background{
+    background: url(.../pricing-component-with-toggle-master/images/bg-bottom.svg) bottom left no-repeat, url(.../pricing-component-with-toggle-master/images/bg-top.svg) top right no-repeat;
+    background-color: rgb(246, 247, 255);
+}
+
+.header{
+    margin-top: 2%;
+}
+
+.title{
+    text-align: center;
+    color: rgb(109, 112, 143);
+    font-size: 35px;
+}
+
+.annual-monthly{
+    width: 30%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    flex-flow: row;
+}
+
+#header-style{
+    color: rgb(178, 177, 193);
+    font-size: 20px;
+}
+
+input[type = "checkbox"]{
+    -webkit-appearance: none;
+    background-image: linear-gradient(to right , rgb(165,165,239) , rgb(111, 112, 203));
+    width: 16%;
+    height: 33px;
+    border-radius: 50px;
+    align-self: center;
+    outline: none;
+}
+
+input[type = "checkbox"]:before{
+    content: "";
+    position: absolute;
+    width: 2%;
+    height: 3.5%;
+    background: #ffffff;
+    border-radius: 25px;
+    transform: scale(1);
+    margin-top: .25%;
+    margin-left: 0.4%;
+    transition: 350ms ;
+}
+
+input:checked[type = "checkbox"]:before{
+    margin-left: 2.2%;
+}
+
+.boxes{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+[class *= "box-"]{
+    background-color: #ffffff;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px lightgrey;
+    margin: 3px;
+    width: 25%;
+    transition: width,height 500ms;
+}
+
+.pack{
+    color: rgb(80, 84, 107);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.price{
+    color: rgb(80, 84, 107);
+    font-size: 65px;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+#inner-text{
+    text-align: center;
+    border-top: 1px solid gray;
+}
+
+table{
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+td,th{
+    padding-top: 5%;
+    padding-bottom: 5% ;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    color: rgb(88, 89, 105);
+}
+
+.info-butt{
+    background-image: linear-gradient(to right, rgb(163,165,238), rgb(84,86,197));
+    border: none;
+    border-radius: 5px;
+    height: 10%;
+    width: 90%;
+    color: #ffffff;
+    margin: 5%;
+    margin-top: 10%;
+    cursor: pointer;
+    outline: none;
+}
+
+/* hover and dark mode*/
+
+#white-box:hover{
+    background-image: linear-gradient(to right, rgb(159,163,230) , rgb(101,106,206));
+    height: 450px;
+    width: 28%;
+}
+
+#white-box:hover .price{
+    color: #ffffff;
+}
+
+#white-box:hover > .pack{
+    color: #ffffff;
+}
+
+#white-box:hover > .info-butt{
+    background-image: linear-gradient(to right, #ffffff ,#ffffff);
+    color: rgb(101,106,206);
+}
+
+#white-box:hover td,th{
+    color: #ffffff;
+}
+
